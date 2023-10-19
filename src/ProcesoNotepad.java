@@ -9,7 +9,7 @@ public class ProcesoNotepad {
             Thread.sleep(3000);
             }
         } catch (IOException e) {
-            System.out.println("Error al ejecutar el proceso: " + e.getMessage());;
+            System.out.println("Error al ejecutar el proceso: " + e.getMessage());
         } catch(InterruptedException e) {
             System.out.println("EL proceso se ha interrumpido: " + e.getMessage());
         }
