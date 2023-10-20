@@ -5,6 +5,7 @@ public class ProcesoNotepad {
         try {
         Process notepad = new ProcessBuilder("notepad.exe").start();
         while(notepad.isAlive()){
+            //Entra si esta vivo
             System.out.println("Está vivo!");
             Thread.sleep(3000);
             }
@@ -13,6 +14,7 @@ public class ProcesoNotepad {
         } catch(InterruptedException e) {
             System.out.println("EL proceso se ha interrumpido: " + e.getMessage());
         }
+        //Ya no está vivo
         System.out.println("Ya no está vivo");
     }
 }
